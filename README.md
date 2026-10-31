@@ -37,10 +37,9 @@ A Bool was chosen over a String for selection of hard mode because it only has t
 
 -** Result Text Colour**
 *If: *Indicates if the following statement is true or false. 
-*Result.contains*: Explains what the result statement must contain for the statement to be true. This is the parameter.
-*("")*: What must be in the result for this part of the code to work. This is the argument.
+*Result.contains*: 'Contains' is a built in function that every String has. It checks if the result of the game is true or false (win or lose). 
+Arugment (ex. *"Win" *or *"Lost"*): The text you hand 'contains' as an argument explaing what to look for. 
 *return colour.\_\_\_*: Explains what colour the result text will become if the statement is true. 
-The parameter in this line of code is "contains" as it is asking what the line of code must contain. The "win" or "lost" inside the bracket is the arugment as it is what is being changed.
  
 ## What I added 
 - The game now tells the player when they have won or lost. 
