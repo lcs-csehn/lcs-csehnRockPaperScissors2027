@@ -103,6 +103,11 @@ The parameter in this line of code is "contains" as it is asking what the line o
 **What should happen:** The computer goes through the (0..2) sequence then with the %3 returns to 0.
 **What did happen**: Computer played rock on the fourth turn repeating the sequence. 
 
+-** Test: **Back to easy mode after hard mode.
+**Chosen Input****: **Clicked easy mode, choose paper, clicked hard mode, then easy mode, then clicked paper.
+**What should happen:** Clicking easy mode resets easyModeStep to 0 so the computer's pattern starts from rock on the next play.
+**What did happen**: The easy mode sequence reset after returing to easy mode, computer played rock. 
+
 
 ## Credits
  
