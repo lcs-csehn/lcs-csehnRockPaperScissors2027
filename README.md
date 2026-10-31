@@ -25,9 +25,8 @@ Under the function: winner, lines of code dictate the result based on the comput
 If the line of code is true, the result text will display if the player won, lost, or if it was a tie. 
 
 -** Win Streak**
-In stored properties, currentWinStreak is a var, meaning that it will change. The Int = 0 explains that the win streak is to represented with an interger and that it will always start at 0 when the game is first opened. An Int was chosen because we are counting with whole numbers.
+In stored properties, currentWinStreak is a State var integers starting at 0 which will change. Int = 0 explains that the win streak is to represented with an interger and that it will always start at 0 when the game is first opened. An Int was chosen because we are counting with whole numbers. Under functions, "func updateStreak (won: Bool)" takes a boolean parameter true for win and false for loss. If won is true when a round is played, the game adds 1 to the curent win streak of the player. If won is false, the win strea is reset to 0. Each outcome in "winner" calls the updateStreak (won: True) or updateStreak (won: False) instead of duplicating code. 
 In the body of the code, lines 110-113 dictate the colour, font, and font size of the win streak title in the game. The string allows for text to be displayed.
-In the functions segement of the code, under each line of code which dictates the result of the player move and the computer move, the win streak changes. If the player wins, one number is added to the win streak (shown with +=1). If the computer wins, the win streak is reset to 0.
 
 -** Easy and Hard Mode**
 The state variables (@State var isHardMode) and (@State var easyModeStep) stores whether the game is in hard or easy mode. If isHardMode true, the game is set to hard mode and the moves are randomized. If hard mode false, it is in easy mode. The line also says " easyModeStep = 0" which guarantees the computer's first move will be rock, as the computer reads rock as 0. Rock being read as 0 allows the computer to constantly play the first move as rock, and counting by one each time to 1, then 2, then resetting to 0 so the computer alwasy plays the same series of moves on easy mode. 
@@ -45,7 +44,7 @@ The parameter in this line of code is "contains" as it is asking what the line o
  
 ## What I added 
 - The game now tells the player when they have won or lost. 
-- The game shows the player's "Win streak", for how many times they have won. 
+- The game shows the player's "Win streak", for how many times they have won using a function with a Boolean parameter.
 - The game has an "Easy Mode" and "Hard Mode" options so they player can customize the difficulty when playing.
 - The colour of the result text changes depending on result. When player wins, the text is green. When player looses, the text is red. When it is a tie, the text is grey. 
 ## Testing

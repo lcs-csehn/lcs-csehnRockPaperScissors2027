@@ -40,7 +40,6 @@ struct RockPaperScissorsView: View {
     
     // Winnning streak for the player
     @State var currentWinStreak: Int = 0
-    @State var bestWinStreak: Int = 0
     
     //Hard Mode and Easy Mode
     @State var isHardMode: Bool = true
@@ -253,8 +252,6 @@ struct RockPaperScissorsView: View {
         func updateStreak(won: Bool) {
             if won {
                 currentWinStreak += 1
-                if currentWinStreak > bestWinStreak {
-                    bestWinStreak = currentWinStreak
                 }
             } else {
                 currentWinStreak = 0
