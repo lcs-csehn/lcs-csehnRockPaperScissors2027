@@ -33,7 +33,7 @@ struct RockPaperScissorsView: View {
     @State var computerEmoji: String = "❓"
     
     // What happened in the last round.
-    @State var result: String = "Let's Play Rock, Paper, Scissors! Can you beat the computer?"
+    @State var result: String = "Let's Play Rock, Paper, Scissors! Select Hard Mode or Easy Mode to get started!"
     
     // How many rounds have been played.
     @State var roundsPlayed: Int = 0
