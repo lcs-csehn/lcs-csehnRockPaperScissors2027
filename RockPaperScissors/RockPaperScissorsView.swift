@@ -40,6 +40,7 @@ struct RockPaperScissorsView: View {
     
     // Winnning streak for the player
     @State var currentWinStreak: Int = 0
+    @State var bestWinStreak: Int = 0
     
     //Hard Mode and Easy Mode
     @State var isHardMode: Bool = true
@@ -248,6 +249,17 @@ struct RockPaperScissorsView: View {
         winner ()
     }
     
+    // Updates the win streak and best streak based on a boolean parameter (won or lost).
+        func updateStreak(won: Bool) {
+            if won {
+                currentWinStreak += 1
+                if currentWinStreak > bestWinStreak {
+                    bestWinStreak = currentWinStreak
+                }
+            } else {
+                currentWinStreak = 0
+            }
+        }
     
     // How winner is decided, impacts the player's winning streak
     func winner () {
@@ -255,22 +267,22 @@ struct RockPaperScissorsView: View {
             result = "It's a tie!"
         } else if playerMove == "Rock" && computerMove == "Paper" {
             result = "You lost, paper covers rock!"
-            currentWinStreak = 0
+            updateStreak(won: false)
         } else if playerMove == "Rock" && computerMove == "Scissors" {
             result = "You win, rock breaks scissors!"
-            currentWinStreak += 1
+            updateStreak(won: true)
         } else if playerMove == "Paper" && computerMove == "Rock" {
             result = "You win, paper covers rock!"
-            currentWinStreak += 1
+            updateStreak(won: true)
         } else if playerMove == "Paper" && computerMove == "Scissors" {
             result = "You lost, scissors cuts paper!"
-            currentWinStreak = 0
+            updateStreak(won: false)
         } else if playerMove == "Scissors" && computerMove == "Paper" {
             result = "You win, scissors cuts paper!"
-            currentWinStreak += 1
+            updateStreak(won: true)
         } else if playerMove == "Scissors" && computerMove == "Rock" {
             result = "You lost, rock breaks scissors!"
-            currentWinStreak = 0
+            updateStreak(won: false)
         }
         
         
