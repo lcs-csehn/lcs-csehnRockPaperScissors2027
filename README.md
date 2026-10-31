@@ -93,7 +93,10 @@ The parameter in this line of code is "contains" as it is asking what the line o
 **What should happen:** Display text "You lost, scissors cuts paper!" and text colour becomes red.
 **What did happen**: "You lost, scissors cuts paper!" was displayed and text colour was red.
 
-
+-** Test: **A tie in the middle of the streak.
+**Chosen Input****: **Easy mode selected, played paper, scissors, then scissors again. 
+**What should happen:** Display text "It's a tie"! and text colour becomes gray.
+**What did happen**: "It's a tie!" was displayed and text colour was gray.
 
 
 ## Credits
