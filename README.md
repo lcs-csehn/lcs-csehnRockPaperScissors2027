@@ -98,6 +98,11 @@ The parameter in this line of code is "contains" as it is asking what the line o
 **What should happen:** Display text "It's a tie"! and text colour becomes gray.
 **What did happen**: "It's a tie!" was displayed and text colour was gray.
 
+-** Test: **Easy mode comes round again.
+**Chosen Input****: **I chose paper, scissors, rock, then paper.
+**What should happen:** The computer goes through the (0..2) sequence then with the %3 returns to 0.
+**What did happen**: Computer played rock on the fourth turn repeating the sequence. 
+
 
 ## Credits
  
