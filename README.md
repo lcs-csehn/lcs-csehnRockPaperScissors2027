@@ -82,6 +82,13 @@ The parameter in this line of code is "contains" as it is asking what the line o
 **Chosen input****: **Selected easy mode, player chooses rock, computer chooses rock. 
 **What should happen: **Tie, result text becomes grey.
 **What did happen:** Tie, result text became grey. 
+
+-** Test: **Rock loses to Paper
+**Chosen Input****: **Hard mode fixed at 2, I chose rock.
+**What should happen:** Display text "You lost, paper covers rock!" and text colour becomes red.
+**What did happen**: "You lost, paper covers rock!" was displayed and text colour was red.
+
+
 ## Credits
  
 - The starting game was written by Mr. Gordon.
