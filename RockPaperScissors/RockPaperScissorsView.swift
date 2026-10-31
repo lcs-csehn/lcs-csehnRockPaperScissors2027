@@ -223,7 +223,8 @@ struct RockPaperScissorsView: View {
                         computerMove = "Scissors"
                         computerEmoji = scissorsEmoji
                     }
-                } else {
+                }
+                else {
                     if easyModeStep == 0 {
                         computerMove = "Rock"
                         computerEmoji = rockEmoji

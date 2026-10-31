@@ -88,6 +88,13 @@ The parameter in this line of code is "contains" as it is asking what the line o
 **What should happen:** Display text "You lost, paper covers rock!" and text colour becomes red.
 **What did happen**: "You lost, paper covers rock!" was displayed and text colour was red.
 
+-** Test: **Paper loses to Scissors
+**Chosen Input****: **Hard mode fixed at 3, I chose paper.
+**What should happen:** Display text "You lost, scissors cuts paper!" and text colour becomes red.
+**What did happen**: "You lost, scissors cuts paper!" was displayed and text colour was red.
+
+
+
 
 ## Credits
  
